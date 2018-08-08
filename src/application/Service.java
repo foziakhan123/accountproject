@@ -6,26 +6,31 @@ import java.util.Map;
 
 
 		public class Service {
-	
+		private int newid=0;
+		private HashMap<Integer, Account> accountmap = new HashMap<>();
 		
-		private HashMap<Integer, Account> hashmap = new HashMap<>();
-		private int nextid=0;
 		
 		public void addanaccount(String firstname, String lastname, String accountnumber) {
 			
-			Account accountoject = new Account(firstname, lastname, accountnumber);
+			Account accountobject;
+			accountobject = new Account(firstname, lastname, accountnumber);
+						
 			
-			hashmap.put(nextid, accountoject);
+			accountmap.put(newid, accountobject);
 			
-			nextid++;
+			newid++;
 			
 			
 			
 			}
 		
-		public void retrieveaccount (String id) {
+		public void retrieveaccount (int id) {
 			
-			System.out.println(hashmap.get(id));
+		
+			
+			System.out.println(accountmap.get(id).getFirstname());
+			System.out.println(accountmap.get(id).getLastname());
+			System.out.println(accountmap.get(id).getAccountnumber());
 			
 			
 			

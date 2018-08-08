@@ -8,7 +8,6 @@ public class Account {
 	private String accountnumber;
 	
 	public Account(String firstname, String lastname, String accountnumber) {
-	
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.accountnumber = accountnumber;
@@ -19,7 +18,7 @@ public class Account {
 		return "Account [firstname=" + firstname + ", lastname=" + lastname + ", accountnumber=" + accountnumber + "]";
 	}
 
-		public String getFirstname() {
+	public String getFirstname() {
 		return firstname;
 	}
 
