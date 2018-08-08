@@ -3,7 +3,7 @@ package application;
 public class app {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World Standard Output");
+		System.out.println("Hello World Standard Out");
 
 	}
 
